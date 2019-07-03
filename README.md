@@ -6,16 +6,23 @@ Prerquisites:
 
 ## AWS
 
-### Logs
+### EC2
+- Show all instances within an account
+Usage:
+```bash
+./aws/ec2/show-all-instances.sh
+```
+
+### Cloudwatch
 - Set all coudwatch logs to specific retention date
-Usage: 
+Usage:
 ```bash
 ./aws/cloudwatch/updateExpire.sh -r 30 -p my-great-profile-name
 ```
 
 ### Cognito
 - Delete all users of a cognito user pool
-Usage: 
+Usage:
 ```bash
 ./aws/cognito/deleteAllUsers.sh -p my-great-profile-name -u eu-centra-1_424242
 ```

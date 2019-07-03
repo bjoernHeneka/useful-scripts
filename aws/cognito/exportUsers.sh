@@ -42,3 +42,7 @@ else
 	RUN=0
 fi
 done
+
+
+
+aws cognito-idp list-users --user-pool-id eu-central-1_EoRI3AI8j |  jq --raw-output '.Users[] | {user: .Username, email: .Attributes[] | select(.Name == "email").Value, custom:user_id": .Attributes[] | select(.Name == "custom:user_id"").Value} | map(.) | @csv'
