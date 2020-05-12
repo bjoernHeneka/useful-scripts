@@ -6,6 +6,13 @@ Prerquisites:
 
 ## AWS
 
+### ECS
+- Show details about running tasks for a defined service in cluster
+Usage:
+```bash
+./aws/ecs/retrieveServiceTasks.sh -p my-great-profile-name -c my-cluster -s my-service          
+```
+
 ### EC2
 - Show all instances within an account
 Usage:
